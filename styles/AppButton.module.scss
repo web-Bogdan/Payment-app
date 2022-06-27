@@ -1,0 +1,42 @@
+
+// Form button
+.btn{
+  position: relative;
+  background-color: #0e46e8;
+  width: 100%;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  overflow: hidden;
+&::before{
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 0%;
+   height: 100%;
+   background-color: forestgreen;
+   transition: .3s width ease;
+   z-index: 1;
+ }
+&:hover.btn::before{
+   width: 100%;
+ }
+.btn__text{
+  position: relative;
+  z-index: 2;
+}
+}
+
+// Disabled button
+   .btnDisabled{
+     background-color: #416ff3;
+     width: 100%;
+     border: none;
+     height: 50px;
+     border-radius: 5px;
+     font-size: 20px;
+     overflow: hidden;
+   }
